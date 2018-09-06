@@ -151,7 +151,8 @@ main {
 
 .model-profile {
   padding: 35px 0;
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
   @media (max-width: 900px) {
     .model-profile {
       flex-direction: column; } }
@@ -201,6 +202,13 @@ main {
   text-transform: lowercase;
   font-size: 1.1em;
   padding-top: 10px; }
+
+.model-slider {
+  padding-top: 30px; }
+
+.model-slide__img {
+  display: block;
+  width: 100%; }
 
 .project-items {
   width: 100%;

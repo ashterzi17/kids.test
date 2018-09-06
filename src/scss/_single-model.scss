@@ -1,6 +1,7 @@
 .model-profile {
   padding: 35px 0;
   display: flex;
+  flex-direction: column;
   @media (max-width: 900px) {
     flex-direction: column;
   }
@@ -56,6 +57,15 @@
     text-transform: lowercase;
     font-size: 1.1em;
     padding-top: 10px;
+  }
+}
+.model-slider {
+  padding-top: 30px;
+}
+.model-slide{
+  &__img {
+    display: block;
+    width: 100%;
   }
 }
 
