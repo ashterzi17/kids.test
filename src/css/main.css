@@ -149,6 +149,59 @@ main {
     filter: grayscale(0%);
     transition: all 0.3s ease; }
 
+.model-profile {
+  padding: 35px 0;
+  display: flex; }
+  @media (max-width: 900px) {
+    .model-profile {
+      flex-direction: column; } }
+
+.model-info {
+  width: 100%; }
+  @media (max-width: 900px) {
+    .model-info {
+      width: 90%;
+      margin: 0 auto; } }
+  .model-info__name {
+    font-family: "no_name_37regular", normal;
+    text-transform: uppercase; }
+    .model-info__name--rus {
+      font-family: "no_name_37light", normal; }
+
+.modelinfonew {
+  width: 100%; }
+
+.newinfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.newinfo-item span {
+  display: block;
+  text-align: center; }
+
+.newinfo-item__name {
+  font-family: "no_name_37regular", normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #474747;
+  padding-bottom: 10px;
+  position: relative; }
+  .newinfo-item__name::before {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    border-bottom: 3px solid #931698;
+    content: ""; }
+.newinfo-item__value {
+  font-family: "no_name_37light", normal;
+  text-transform: lowercase;
+  font-size: 1.1em;
+  padding-top: 10px; }
+
 .project-items {
   width: 100%;
   display: flex;
@@ -163,7 +216,7 @@ main {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px; }
-  @media (max-width: 900px) {
+  @media (max-width: 999px) {
     .modschool {
       width: 95%;
       margin: 0 auto;
@@ -178,7 +231,8 @@ main {
   .modschool__heading {
     font-family: "no_name_37regular", normal;
     color: #454545;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase; }
     .modschool__heading--rus {
       text-transform: uppercase; }
   .modschool__text {
@@ -198,10 +252,11 @@ main {
   margin-top: 30px; }
 
 .programinfo {
+  box-sizing: border-box;
   width: 50%; }
-  @media (max-width: 900px) {
+  @media (max-width: 999px) {
     .programinfo {
-      width: 45%; } }
+      width: 100%; } }
   @media (max-width: 599px) {
     .programinfo {
       width: 100%; } }
@@ -216,6 +271,19 @@ main {
   .programinfo__img {
     display: block;
     width: 100%; }
+  .programinfo--right {
+    padding-right: 20px; }
+  .programinfo--left {
+    padding-left: 20px; }
+
+.cont {
+  height: 100%;
+  position: relative; }
+
+.conttwo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
 
 .contact-flex {
   display: flex;
